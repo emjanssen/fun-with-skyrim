@@ -126,10 +126,9 @@ html {
     background-color: var(--bg-clr-map-light-brown);
 }
 
-
 .hero__aside-one {
     padding-top: .5rem;
-    max-width: 10%;
+    max-width: 12%;
 }
 
 .col__hero-text {
@@ -144,7 +143,7 @@ html {
     background-color: hsl(37, 53%, 68%, 0.85);
     border-radius: 1rem;
     padding: 1rem;
-    margin: .85rem;
+    margin: 1.1rem;
 }
 
 .col__hero-image {
@@ -157,7 +156,7 @@ html {
 
 .hero__aside-one p {
     font-style: italic;
-    padding: .8rem;   
+    padding: .79rem;   
     text-align: center;
 }
 
@@ -173,9 +172,22 @@ html {
 .col__hero-image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem .1rem;
+    padding: 1.25rem .1rem;
+}
+
+
+.col__hero__last h2 {
+    font-size: 1.15rem;
+    color: #271f13;
+    line-height: 1.55;
+    text-align: center;
+    padding-top: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-style: italic;
+    opacity: 90%;
 }
 
 .hero__img {
@@ -188,6 +200,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 1.25rem;
 }
 
 .hero__aside-two p {
@@ -199,7 +212,7 @@ html {
 
 .hero__aside-two h2 {
     padding-top: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: .75rem;
     font-size: 1.25rem;
     color: #3d311d;
 }
@@ -249,13 +262,14 @@ html {
 
 /* FOOTER */
 
+
 .footer {
     background-color: var(--bg-clr-map-brown);
     padding: 2rem;
 }
 
 .heimskir_speech {
-    color: 0e0902ab;
+    color: black;
     font-size: 1.25rem;
 }
 
