@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* RESET */
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+    display: inline-block;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+}
+
+/* VARIABLES */
+
+:root {
+
+    /* FONT SIZES  */
+
+    /* FONT STYLES  */
+
+    /* FONT COLOURS  */
+    --font-clr-skyrim-logo: #a5adb1;
+
+    /* BACKGROUND COLOURS */
+    --bg-clr-map-brown: #d8b681;
+    --bg-clr-map-light-brown: #e0c599;
+
+}
+
+/* CONTAINER, ROW, COL */
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+}
+
+/* HEADER - NAV  */
+
+.header__nav {
+    background-color: var(--bg-clr-map-brown);
+}
+
+.col__nav-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 20%;
+}
+
+.nav__logo-h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.col__nav-links {
+    padding: 1rem;    
+}
+
+.header__nav-ul-list {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__nav-li-items {
+    list-style-type: none;
+}
+
+.header__nav-a-links {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: black;
+    background-color: hsla(0, 11%, 2%, 0.15);
+    border: 1.5px #0e0902ab solid;
+    padding: .5rem 1.25rem;
+    border-radius: 10rem;
+}
+
+.header__nav-a-links:visited {
+    color: black;
+}
+
+.header__nav-a-links:hover,
+.header__nav-a-links:focus {
+    opacity: 85%;
+    font-weight: 500;
+    border: black solid 2px;
+}
+
+/* HEADER - HERO  */
+
+.header__hero {
+    background-color: var(--bg-clr-map-light-brown);
+}
+
+.hero__aside-one {
+    padding-top: .5rem;
+    max-width: 10%;
+}
+
+.col__hero-text {
+    max-width: 30%;
+    text-align: center;
+}
+
+.col__hero-text h1 {
+    font-size: 1.15rem;
+    font-style: italic;
+    border: var(--bg-clr-map-light-brown) 1px outset;
+    background-color: hsl(37, 53%, 68%, 0.85);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: .85rem;
+}
+
+.col__hero-image {
+    max-width: 40%;
+}
+
+.hero__aside-two {
+    max-width: 20%;
+    outline: 2px green solid;
+}
+
+.hero__aside-one p {
+    font-style: italic;
+    padding: .8rem;   
+    text-align: center;
+}
+
+.col__hero-img-army-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1.75rem;
+}
+
+.col__hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .1rem;
+}
+
+.hero__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sign-up-links {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.p__stormcloaks {
+    background-color: hsl(195, 53%, 79%, .6);
+    padding: 1rem;
+    border-radius: 1.75rem;
+    border: darkblue 1px solid;
+}
+
+.p__legion {
+    background-color: hsl(0, 79%, 72%, .6);
+    padding: 1rem;
+    border-radius: 1.75rem;
+    border: red 1px solid;
+}
+
+.p__legion:hover,
+.p__stormcloaks:hover,
+.p__legion:focus,
+.p__stormcloaks:focus {
+    opacity: 80%;
+    border: 2px black solid;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--bg-clr-map-brown);
+    padding: 2rem;
+}
+
+.heimskir_speech {
+    color: 0e0902ab;
+    font-size: 1.25rem;
+}
+
+
+/* MEDIA QUERIES */
