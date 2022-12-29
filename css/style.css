@@ -74,6 +74,7 @@ html {
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    padding-right: .5rem;
 }
 
 .col__nav-links {
@@ -114,11 +115,17 @@ html {
     border: black solid 2px;
 }
 
+.guard__img {
+    max-width: 20%;
+    border-radius: 2rem;
+}
+
 /* HEADER - HERO  */
 
 .header__hero {
     background-color: var(--bg-clr-map-light-brown);
 }
+
 
 .hero__aside-one {
     padding-top: .5rem;
@@ -146,7 +153,6 @@ html {
 
 .hero__aside-two {
     max-width: 20%;
-    outline: 2px green solid;
 }
 
 .hero__aside-one p {
@@ -177,6 +183,33 @@ html {
     height: auto;
 }
 
+.hero__aside-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero__aside-two p {
+    padding: .5rem;
+    font-size: .9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.hero__aside-two h2 {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+    color: #3d311d;
+}
+
+.bandit__img {
+    max-width: 87%;
+    padding: .5rem;
+    border-radius: 1.5rem;
+}
+
 .sign-up-links {
     text-decoration: none;
     color: black;
@@ -185,25 +218,33 @@ html {
 }
 
 .p__stormcloaks {
-    background-color: hsl(195, 53%, 79%, .6);
+    background-color: hsl(195, 53%, 79%, .3);
     padding: 1rem;
     border-radius: 1.75rem;
-    border: darkblue 1px solid;
+    border: hsl(230, 100%, 27%, 0.25) 2px solid;
+    outline: hsl(230, 100%, 27%, 0.25) 2px solid;
+    outline-offset: -2px;
+    transition: outline-offset 275ms ease-in-out;
 }
 
 .p__legion {
-    background-color: hsl(0, 79%, 72%, .6);
+    background-color: hsl(0, 79%, 72%, .3);
     padding: 1rem;
     border-radius: 1.75rem;
-    border: red 1px solid;
+    border: hsl(0, 100%, 50%, 0.25) 2px solid;
+    outline: hsl(0, 100%, 50%, 0.25) 2px solid;
+    outline-offset: -2px;
+    transition: outline-offset 275ms ease-in-out;
 }
 
 .p__legion:hover,
+.p__legion:focus {
+    outline-offset: 3px;
+}
+
 .p__stormcloaks:hover,
-.p__legion:focus,
 .p__stormcloaks:focus {
-    opacity: 80%;
-    border: 2px black solid;
+    outline-offset: -8px;
 }
 
 /* FOOTER */
